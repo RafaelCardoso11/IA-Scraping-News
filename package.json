@@ -4,16 +4,18 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon src/main.ts > index.html",
+    "dev": "nodemon src/main.ts",
     "test": "tsc && jest ./dist",
     "format": "prettier --write \"**/*.ts\"",
     "lint": "eslint \"**/*.ts\" --fix"
   },
   "dependencies": {
-    "puppeteer": "^21.0.2",
+    "axios": "^1.4.0",
+    "cheerio": "^1.0.0-rc.12",
     "ts-node": "^10.9.1"
   },
   "devDependencies": {
+    "@types/node": "^20.4.9",
     "nodemon": "^3.0.1",
     "typescript": "^5.1.6"
   }
